@@ -1,6 +1,14 @@
 # Areos
 
-A kernel that plays videos in up to 560 colors using vga text mode's 16 colors and ascii support, as well as some dithering hacks
+A kernel that plays videos in up to 560 colors using vga text mode's 16 colors and ascii support, as well as some dithering hacks by coloring bg and fg of these chars: `░▒▓█`
+
+<strong>Below is how i got to making this stupiness. Jump to [this](#usage) if you want to skip it</strong>
+
+I actually started this project over a challenge from a friend to play Bad Apple in a kernel after they made it play in dos, it started with [This project](https://github.com/Vortetty/AreOS/tree/master/videoKernelGrey)
+Shortly after that i decided to add dithering using the greys(going from 1bpp, to 2bpp)
+Ascii has `░▒▓█` that can be used for dithering, so to this idea was added a number for what char to use to add more colors
+that plan resulted in 17 possible colors! And the format was `<0b0-0b11 for first grey(fg)><0b0-0b11 for second grey(bg)><0b0-0b11 for second grey><0b0-0b11 for character to use (one of these: ░▒▓█)>00`, for example a black and white pixel with equal parts each color could be `0b11000100`
+I then realized i could encode colors this same way, and now the videos are arrays of vga characters, and the dither characters allow color blending leading to the 560 colors this supports!
 
 ## Usage
 

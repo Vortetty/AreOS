@@ -1,6 +1,6 @@
 OS_NAME = AreOS
 VERSION = 0.0.0
-VIDEO_TO_RUN = rgb_radial_test.o
+VIDEO_TO_RUN = rick.o
 VIDEO_FOLDER = src/videos/compiled/
 
 mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
