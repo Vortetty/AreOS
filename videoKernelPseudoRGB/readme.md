@@ -22,11 +22,19 @@ A bootable iso with grub, and a multiboot compatible binary can both be found in
 
 ## Requirements
 
+- Linux
+  - tested on Arch Linux with linux 5.13.7-arch1-1
+  - You could use Windows if you want to try, but you will need to compile/find binaries for i686-elf-gcc, GNU Sed, and GNU Make yourself or find replacements
+  - the makefile will need to be changed to use windows commands
+    - this includes changing syntax for some ifs
 - Python 3.9+
-  - scipy
-  - numpy
-  - pillow
-  - opencv-python
+  - also needs these libs from pip:
+    - scipy
+    - numpy
+    - pillow
+    - opencv-python
 - Qemu
 - i686-elf-gcc
 - GNU Make
+- GRUB
+- GNU Sed
