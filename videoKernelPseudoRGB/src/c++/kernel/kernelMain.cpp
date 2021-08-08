@@ -178,7 +178,7 @@ void terminal_writestring(const char* data)
 
 void drawFrame(int frame) {
     size_t offset = video[1] * video[2] * frame + 3;
-    for (size_t c = 0; c < video[1] * video[1]; c++) {
+    for (size_t c = 0; c < video[1] * video[2]; c++) {
         uint16_t entry = video[offset + c];
         terminal_putentryat(entry, c % video[1], c / video[1]);
     }
