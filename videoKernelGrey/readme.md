@@ -1,6 +1,6 @@
 # Areos
 
-A kernel that plays videos in black and white
+A bare metal program that plays videos in black and white
 
 ## Usage
 
