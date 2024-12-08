@@ -1,6 +1,6 @@
 # Areos
 
-A kernel to f-ck around with
+A kernel to mess around with
 
 ## Usage
 
