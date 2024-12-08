@@ -1,6 +1,6 @@
 # Areos
 
-A kernel that plays videos in up to 560 colors using vga text mode's 16 colors and ascii support, as well as some dithering hacks by coloring bg and fg of these chars: `░▒▓█`
+A bare metal program that plays videos in up to 560 colors using vga text mode's 16 colors and ascii support, as well as some dithering hacks by coloring bg and fg of these chars: `░▒▓█`
 
 <strong>Below is how i got to making this stupidness. Jump to [this](#usage) if you want to skip it</strong>
 
